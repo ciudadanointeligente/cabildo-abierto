@@ -71,7 +71,8 @@ class MainsController < ApplicationController
 
   def prioritize bills
     priorities = {"Discusión inmediata" => 1, "Suma" => 2, "Simple" => 3}
-    prioritized_bills = bills.sort {|x,y| priorities[x.current_priority] <=> priorities[y.current_priority]}
-    prioritized_bills[0..7]
+    # prioritized_bills = bills.sort {|x,y| priorities[x.current_priority] <=> priorities[y.current_priority]}
+    # prioritized_bills[0..7]
+    prioritized_bills = []
   end
 end
